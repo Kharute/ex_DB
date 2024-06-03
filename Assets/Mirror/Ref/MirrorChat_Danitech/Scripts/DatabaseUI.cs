@@ -139,7 +139,7 @@ public class DatabaseUI : MonoBehaviour
     }
     public void OnSubmit_SendQuery()
     {
-        string query = string.IsNullOrWhiteSpace(Input_Query.text) ? "SELECT * FROM player_info "
+        string query = string.IsNullOrWhiteSpace(Input_Query.text) ? "SELECT * FROM user_info "
             : Input_Query.text;
 
         SendQuery(query, "player_info");
